@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="esc.css">
+</head>
+<body>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">Team</a></li>
+            <li> <a href="#">Portfolio</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <h1>Datos del Estudiante</h1>
+    <div id="Esc">
+        <form action=""></form>
+            <div class="Esc-nombre">
+                <label for="nombre-firt">Nombre</label><BR>
+                <input type="text" name="nombre" id="nombre-firt">
+            </div>
+            <div class="Esc-apellido">
+                <label for="name-last" >Apellido</label><BR>
+                <input type="text" name="apellido" id="name-last" >
+            </div>
+            <div class="Esc-tel">
+                <label for="phone">Telefono</label>
+                <br><input type="tel" name="tel" id="phone" >
+            </div>
+            <div class="Esc-Id-Est">
+                <label for="id-est">ID Estudiante</label>
+                <br><input type="tel" name="Esc-Id-Est" id="id-est" >
+            </div>
+            <div class="Esc-Fech-Na">
+                <label for="fechanac">Fehca de Nacimiento</label>
+                <br><input type="date" name="Esc-Fech-Na" id="fechanac" >
+            </div>
+            <div class="Cur-Esc">
+                <label for="Cur-Esc">Curso</label><br>
+                <input type="list" list="Cur-Esc" name="Cur-Esc" id="curso" >
+                <datalist id="Cur-Esc">
+                    <option value="1ro Secundaria"></option>
+                    <option value="2do Secundaria"></option>
+                    <option value="3ro Secundaria"></option>
+                    <option value="4to Secundaria"></option>
+                    <option value="5to Secundaria"></option>
+                    <option value="6to Secundaria"></option>
+                </datalist>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar= document.getElementById('sidebar');
+        document.onclick = function(e){
+            if(e.target.id !=='sidebar'&& e.target.id !=='toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active'); 
+            }
+        }
+
+
+
+        toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>

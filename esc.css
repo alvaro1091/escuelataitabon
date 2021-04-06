@@ -1,0 +1,96 @@
+h1{
+    text-align-last: center;
+    font-size: 50px;
+    margin: 30px;
+    
+}
+
+#Esc {
+    position: relative;
+    border: 2px solid #73AD21;
+    left: 25%;
+    top: 30px;
+    width: 50%;
+    height: 50%;
+    background: #003147;
+    font-size: 23px;
+    }
+    form div label{
+        text-align:center;
+    }
+
+    #Esc .Esc-nombre{
+        position: relative;
+        margin: 2px ;
+        padding: 10px;
+    }
+
+    #Esc .Esc-apellido{
+        margin: 2px ;
+        padding: 10px;
+        position: relative;
+    }
+
+    #Esc .Esc-tel{
+        margin: 2px ;
+        padding: 10px;
+        position: relative;
+    }
+
+    #Esc .Esc-Id-Est{
+        margin: 2px ;
+        padding: 10px;
+        position: relative;
+    }
+
+    #Esc .Esc-Fech-Na{
+        margin: 2px ;
+        padding: 10px;
+        position: relative;
+    }
+
+    #Esc .Cur-Esc{
+        margin: 2px ;
+        padding: 10px;
+        position: relative;
+    }
+
+    input[type=text], select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=tel], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=date], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=list], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
