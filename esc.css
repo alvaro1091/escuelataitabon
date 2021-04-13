@@ -15,9 +15,9 @@ h1{
     background: #003147;
     font-size: 23px;
     }
-    form div label{
+    /* form div label{
         text-align:center;
-    }
+    } */
 
     #Esc .Esc-nombre{
         position: relative;
@@ -94,3 +94,6 @@ h1{
         border-radius: 4px;
         box-sizing: border-box;
     }
+    /* 
+    
+    */
