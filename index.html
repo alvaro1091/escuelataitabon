@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="esc.css">
 </head>
 <body>
-    <H1>Inicio</H1>
-    <p>Para rellenar los datos debe iniciar secion con tu cuanta de Usuario</p>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="estudiante.html">Estudiante</a></li>
+            <li> <a href="#">Padres o Tutores</a></li>
+            <li> <a href="#">Profesores</a></li>
+            <li> <a href="#">Portfolio</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <h1>Registrate Para Poder identificarte</h1>
+    <div id="Esc">
+        <form action=""></form>
+            <div class="Esc-nombre">
+                <label for="nombre-firt">Nombre</label><BR>
+                <input type="text" name="nombre" id="nombre-firt">
+            </div>
+            
+            <div class="Esc-tel">
+                <label for="phone">Contraseña</label>
+                <br><input type="tel" name="tel" id="phone" >
+            </div>
+            
+        </form>
+    </div>
+<div class="log">
+    <img src="multi/login.svg" alt="" heigh="300px" width="300px">
+</div>
+
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar= document.getElementById('sidebar');
+        document.onclick = function(e){
+            if(e.target.id !=='sidebar'&& e.target.id !=='toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active'); 
+            }
+        }
+
+
+
+        toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    }
+    </script>
 </body>
 </html>
